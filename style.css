@@ -73,3 +73,62 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+.stats-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 1%;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 10px;
+}
+
+/* General style rule set for all items in ul */
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 5%;
+    z-index: 3;
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+    float: left;
+    margin: 20px;
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+    display: block;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid black; /* Combines border-width, border-style, and border-color */
+    border-radius: 10%; /* Creates rounded corners */
+    padding: 5px; /* Adds space inside the borders */
+    /* Adds space between navbar elements */
+    background-color: gray;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+    font-weight: bold;
+    background-color: white;
+}
